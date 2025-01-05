@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="warning-banner">
+            ⚠️ Educational Demo Only - Learn About Online Scams ⚠️
+        </div>
+        
+        <div class="main-content">
+            <div class="glitch-text">SECURITY DEMONSTRATION</div>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                </div>
+                <div class="terminal-content">
+                    <div id="output"></div>
+                    <div class="cursor"></div>
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <div class="option-group">
+                    <label>Select Device:</label>
+                    <div class="custom-select">
+                        <select id="deviceSelect">
+                            <option value="android">Android</option>
+                            <option value="iphone">iPhone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <label>Hide IP:</label>
+                    <label class="switch">
+                        <input type="checkbox" id="hideIp">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="option-group">
+                    <label>Enable Encryption:</label>
+                    <label class="switch">
+                        <input type="checkbox" id="enableEncryption">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <button id="startDemo" class="glow-button">START DEMO</button>
+            </div>
+        </div>
+
+        <div class="educational-notice">
+            <h2>🚨 Educational Notice</h2>
+            <p>This is a demonstration of how malicious websites attempt to trick users. Never trust websites claiming to hack or leak private accounts. Always protect your personal information and report suspicious activities.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
